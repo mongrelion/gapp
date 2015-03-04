@@ -1,11 +1,9 @@
-FROM google/golang
+FROM scratch
 
 MAINTAINER Carlos León, mail@carlosleon.info
 
-ADD . /gopath/src/github.com/mongrelion/gapp
+ADD ./gapp.i386 /bin/gapp
 
-RUN ["go", "install", "github.com/mongrelion/gapp"]
-
-ENTRYPOINT ["gapp"]
+ENTRYPOINT ["/bin/gapp"]
 
 EXPOSE 8080
