@@ -3,3 +3,4 @@
 
 # Ignore dist. binaries.
 /gapp
+/main
