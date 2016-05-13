@@ -14,7 +14,7 @@ func main() {
 		fmt.Fprintf(w, GreetingMessage())
 	})
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
 
 func GetVersion() string {
