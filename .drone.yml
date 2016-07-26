@@ -1,7 +1,7 @@
-build:
-  image: golang
-  environment:
-    - VERSION=1.0
-  commands:
-    - go get
-    - go test -v .
+pipeline:
+  build:
+    image: golang
+    environment:
+      - VERSION=1.0
+    commands:
+      - go test -v .
