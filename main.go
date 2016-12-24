@@ -11,6 +11,7 @@ var version string
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		log.Printf("%s %s", r.Method, r.URL)
 		fmt.Fprintf(w, GreetingMessage())
 	})
 
