@@ -2,5 +2,4 @@
 /.vagrant/
 
 # Ignore dist. binaries.
-/gapp
-/main
+/dist/
