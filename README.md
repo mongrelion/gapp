@@ -6,3 +6,8 @@ Test Go application running on a Docker container.
 ```
 $ VERSION=1.0 ./app
 ```
+
+### TODO
+#### TravisCI Integration
+- [x] Run tests in TravisCI
+- [ ] Build and push Docker image when tests are passing
