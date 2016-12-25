@@ -1,4 +1,4 @@
-# gapp
+# gapp [![Build Status](https://travis-ci.org/mongrelion/gapp.svg?branch=features%2Ftravis-ci)](https://travis-ci.org/mongrelion/gapp)
 Test Go application running on a Docker container.
 
 ### How to run the application?
