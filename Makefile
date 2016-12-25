@@ -3,6 +3,8 @@ IMAGE := mongrelion/gapp
 
 default: test
 
+dist: build-image push-image
+
 build:
 	@go build main.go
 
@@ -11,8 +13,6 @@ run:
 
 test:
 	@go test -v .
-
-dist: build-image push-image
 
 build-image:
 	@docker build -t $(IMAGE):$(TAG) .

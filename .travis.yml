@@ -3,3 +3,7 @@ language: go
 go:
   - 1.6
   - 1.7
+
+after_success:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+  - make dist
