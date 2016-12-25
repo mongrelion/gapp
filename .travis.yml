@@ -6,4 +6,4 @@ go:
 
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
-  - make dist
+  - if [[ $(git rev-parse --abbrev-ref HEAD) -eq "master" ]]; then make dist; fi
